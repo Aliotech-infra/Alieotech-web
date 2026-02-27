@@ -1,6 +1,6 @@
-module "Test Server" {
+module "Test_Server" {
   source = "./ec2"
-  name   = "Test Server"
+  name   = "Test_Server"
 }
 
 # module "sample2" {
