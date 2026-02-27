@@ -1,6 +1,6 @@
-module "sample1" {
+module "Test Server" {
   source = "./ec2"
-  name   = "sample1"
+  name   = "Test Server"
 }
 
 # module "sample2" {
@@ -9,9 +9,9 @@ module "sample1" {
 # }
 
 
-output "public_ip_sample1" {
-  value = module.sample1.public_ip
-}
+# output "public_ip_sample1" {
+#   value = module.sample1.public_ip
+# }
 
 # output "public_ip_sample2" {
 #   value = module.sample2.public_ip
