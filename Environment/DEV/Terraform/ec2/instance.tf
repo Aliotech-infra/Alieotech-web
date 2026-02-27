@@ -1,6 +1,6 @@
 resource "aws_instance" "web" {
   ami                    = data.aws_ami.example.id
-  instance_type          = "t3.small"
+  instance_type          = "t3.medium"
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
@@ -9,9 +9,9 @@ resource "aws_instance" "web" {
 }
 
 data "aws_ami" "example" {
-  owners      = ["973714476881"]
+  owners      = ["679593333241"]
   most_recent = true
-  name_regex  = "Centos-8-DevOps-Practice"
+  name_regex  = "CentOS-Stream-9-20250604.1.x86_64-aba856bc-78bf-441c-b25c-980bec33a53f"
 }
 
 
